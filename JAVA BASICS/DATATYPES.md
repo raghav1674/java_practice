@@ -34,14 +34,14 @@ JAVA do not support narrowing of the datatypes as there is loss of some data. In
 
 ### NARROWING AND WIDENING:
 
-    ----------------------
+
 
 - NARROWING: big data type to small (not supported in java )
 - WIDENING: small data tyep to big data type (supported by default)
 
 ##### COMMENTS IN JAVA:
 
-     ------------------
+  
 
 - SINGLE LINE COMMENT : // comment
 

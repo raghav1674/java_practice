@@ -45,6 +45,6 @@ JAVA do not support narrowing of the datatypes as there is loss of some data. In
 
 - SINGLE LINE COMMENT : // comment
 
-- BLOCK / MULTILINE COMMENT: /_ comment _/
+- BLOCK / MULTILINE COMMENT: /  comment  /
 
-- DOCUMENT COMMENT: /\*_ comment _/ : helps in documentation of code and there is a program named `javadoc` which do documentation of code automatically for dev.
+- DOCUMENT COMMENT: /** comment */ : helps in documentation of code and there is a program named `javadoc` which do documentation of code automatically for dev.

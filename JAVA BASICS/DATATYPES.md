@@ -22,11 +22,11 @@
 
 - REFERENCE VARIABLES.
 
-IMPORTANT NOTE: The non-primitive data types are always teh reference variables and the [] with any type of data type is a reference variable.
+IMPORTANT NOTE: The non-primitive data types are always the reference variables and the [] with any type of data type is a reference variable.
 
 JAVA do not support narrowing of the datatypes as there is loss of some data. In order to do narrowing we have to typecast it.
 
-- float x =10.0f; // error as bydeafult decimal values are double to tell it is float either typecast or type 'f' as suffix
+- float x =10.0f; // error as by deafult decimal values are double to tell it is float either typecast or type 'f' as suffix
 
 - int y=x; // error narrowing
 
@@ -37,7 +37,7 @@ JAVA do not support narrowing of the datatypes as there is loss of some data. In
 
 
 - NARROWING: big data type to small (not supported in java )
-- WIDENING: small data tyep to big data type (supported by default)
+- WIDENING: small data type to big data type (supported by default)
 
 ##### COMMENTS IN JAVA:
 

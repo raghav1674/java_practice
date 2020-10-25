@@ -42,11 +42,11 @@ public static void main(String[]args){
  **IMPORTANT**
 
 
-|---------|-------------|-----------|
+
 |  scope  |   Ordinary  | Reference |
 |---------|-------------|-----------|
 |  local  |   blank     |   blank   |
-|---------|-------------|-----------|
+|         |-------------|-----------|
 | instance| 0,0.0,false |   null    |
 |---------|-------------|-----------|
 | static  | 0,0.0,false |   null    |

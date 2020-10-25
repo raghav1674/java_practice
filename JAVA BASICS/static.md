@@ -15,7 +15,7 @@
 
 ### EXAMPLE
 
-    ```java
+```java
 
 class Example{
 
@@ -36,8 +36,10 @@ public static void main(String[]args){
 }
 
 }
-    ```
+```
+          
           **IMPORTANT**
+
 |---------|-------------|-----------|
 |  scope  |   Ordinary  | Reference |
 |---------|-------------|-----------|

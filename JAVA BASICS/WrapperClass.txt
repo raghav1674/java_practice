@@ -1,0 +1,76 @@
+Yesterday we come to know about the Wrapper Classes.
+It is an approach to achieve 100% OOP in Java.
+
+- Wrapper Classes have a single data member of the primitive type and many useful methods.
+
+int         Integer
+boolean     Boolean
+float       Float
+double      Double
+byte        Byte
+char        Character
+long        Long
+short       Short  
+
+
+EXAMPLE:
+
+```java  
+
+class Main{
+
+
+    public static void main(String[] args){
+
+        Integer i1 = new Integer(5);  
+        System.out.println(i1); // 5
+
+
+        Integer i = new Integer("11"); //correct.
+        /*
+           parseInt() : is a static method , which converts the String which can be paresed into Integer into it's primitive type.
+           parseFloat() 
+        */
+        String s1 ="10001";
+        int i2 = Integer.parseInt(s1); //
+        System.out.println(i2); // 10001
+
+        /*
+
+            valueOf(): static method which returns the reference of that Wrapper Class type.
+            
+        */
+            Integer i3 = Integer.valueOf("1001",2); // base 2: ie binary and returns the reference
+
+            /*
+            we can perform addition,subtraction and other operations directly between the objects as operator overloading is already is done by the java developer.
+
+            */
+
+            int i4 = i1  + i3;  //5 + 9 = 14.
+
+        /*
+
+            xxxvalue() : is an instance method which converts the Wrapper to primitive type.
+
+         
+        */
+
+        Integer x = new Integer(10);
+        Float z = new Float(10.0f);
+        int y = x.intValue(); // Integer to int 
+        float f1 = z.floatValue();
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+```

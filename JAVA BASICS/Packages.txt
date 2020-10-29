@@ -1,0 +1,41 @@
+Packages: a container for classess and other packages.
+- it is a way of maintaing the code in a proper manner , that the classes having the same functionality or related to same projects are included in the same packages.
+- package is a folder in which we can have other packages or the .class file.
+
+- HOW TO CREATE A PACKAGE?
+
+- at the top most of the program write one statement.
+
+package <package name>;
+
+- and while compiling that .java source code file.
+
+javac -d(directory)  <path to the directory>  filename.java
+
+then the package will be created in the directory path mentioned.
+
+- HOW TO RUN THE FILE?
+
+java packagename.filename
+
+IMPORTANT POINTS:
+
+
+- we can have only one public class in a .java file.
+
+- if we have main method in one class then only that class can be public only.
+
+EXAMPLE:
+     P1             P2
+     |_ A1(MAIN)    |_ B1
+     |_ A2          |_ B2 
+    
+in P1 or P2 package we can either have 4 .java files one for each class and all can be made public.
+
+OR we  can create 2 files one in P1 packages and in that A1 class has the main method so we can create that class as public and in case of P2 can create anyone of them as public.
+
+- we come to know about the usage of the import keyword.
+
+- IMPORT : it is used to include the classes from other packages , ie it makes those classes avaialable but not accessible always , only the public class can be accessed in other package , so if a package do not have any public class then it would be impossible to access the classes in that package or in that file of other packages.
+
+and the name convention for packages is in lower case.

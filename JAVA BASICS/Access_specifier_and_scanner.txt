@@ -1,0 +1,71 @@
+today we come to know about access specifers in java:
+
+there are 4 access specifiers in Java:
+        - PUBLIC
+        - PRIVATE
+        - PROTECTED
+        - DEFAULT
+
+Important Point to Notice:
+
+- Outer Class: Public or Default  
+- Inner Class: Private , Public , Protected, Default  
+- Static members and instance members: Private , Public , Protected , Default
+- Local Members: no access specifiers.
+
+PUBLIC ACCESS SPECIFIER:
+- OUTER CLASS: can be accessed within and any package.
+- INNER CLASS: cann be accessed through the object of outer class.
+- Static and Instance : can be accessed.
+
+PRIVATE ACCESS SPECIFIER:
+- ONLY WITHIN THE CLASS.
+
+PROTECTED ACCESS SPECIFIER:
+- OUTER CLASS: N.A.
+- INNER CLASS AND MEMBERS: can be accessed within the package like public , but outside package the other class need to inherit it first to use it.
+
+DEFAULT ACCESS SPECIFIER:
+- WITHIN THE PACKAGE.
+- CANNOT BE ACCESSED OUTSIDE THE PACKAGE.
+
+WITHIN A PACKAGE:
+PUBLIC == PROTECTED == DEFAULT 
+
+OUTSIDE PACKAGE:
+PUBLIC :)   PROTECTED (inherit)  DEFAULT :(
+
+
+Then we come to know about How to take user input in Java:
+- in c , we use scanf and scanf gets the data from the buffer which is filled by the keyboard(std input) and then scanf will do filtering based on the format specifier provided.
+
+- in Java, we have one class `Scanner` : which is used to take the data from the buffer and if data is not there we need to fill the buffer from the standard input , i.e., Keyboard.
+
+- and we fill the input buffer we need to take the input from Standard input anad for that we use System.in and for formating we use the functions/methdos defined in the Scanner class.
+
+- Scanner is a public class which is in java.util package.
+
+
+import java.util.Scanner;
+
+Scanner sc = new Scanner(System.in);
+int a = sc.nextInt(); // to parse it or filter as in integer.
+
+
+- but if the buffer do not have the data which can be converted to the integer, then it throws exception and to prevent that we can use sc.hasNextInt() function.
+
+int a =0;
+if(sc.hasNextInt())
+    a = sc.nextInt();
+
+- we have the methods for all datatypes except character.
+
+nextInt()
+nextFloat()
+nextLong()
+nextShort()
+nextBoolean()
+next() : space is a delimiter.
+nextLine() : new line character is a delimiter.
+
+

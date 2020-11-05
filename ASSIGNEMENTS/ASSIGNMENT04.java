@@ -42,25 +42,11 @@ class ASSIGNMENT04{
   }
 
   //q6:
-  static int  getMiddleElement(int a,int b,int c){
+  static int  getMiddleDigit(int a){
 
     int middle;
 
-    if(a<b && b<c&&a<c){
-
-        middle=b;
-
-    }
-    else if(b<a && a<c && b<c)
-    {
-        middle=a;
-    }
-    else{
-
-        middle=c;
-    }
-
-
+    middle = (a/10)%10;
     return middle;
 
   }
@@ -175,6 +161,6 @@ class ASSIGNMENT04{
 
 //q7:
 
-   System.out.println("Middle Element of 1,2,3 is: "+getMiddleElement(21,221,3));
+   System.out.println("Middle Element of 1,2,3 is: "+getMiddleDigit(231));
 }
 }

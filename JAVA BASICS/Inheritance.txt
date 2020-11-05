@@ -1,0 +1,24 @@
+We come to know about the inheritance in Java.
+
+- Inheritance is basically adding more features to the existing application or template , inorder to get the desired features and functionality .
+
+- here we have a is A relation between the parent and the child class.
+
+- Super Class: Parent Class: Base Class
+- Child Class: Sub Class
+
+- only public inheritance.
+
+
+class Parent{
+
+
+}
+class Child extends Parent{
+
+    // all inherited except the private.
+}
+
+
+
+

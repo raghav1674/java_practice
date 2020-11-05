@@ -1,0 +1,16 @@
+We come to know about the Constructor.
+
+- it is an instance member having the same name as the classname,
+
+- it is like a function or method but not a method.
+
+- it is used to neccesasry things which we want to do after the memeory has been alloted to the object.
+
+- when no constructor made by the user , the default constructor is there.
+
+- we can override the constructor as well.
+
+- it can have any access specifiers.
+
+- there is not copy constructor as there is no static way of creating the object.
+

@@ -1,0 +1,49 @@
+we come to know about the Abstract classes in Java.
+Absract classes means that class cannot be intiantiated, means we cannot create the object of that class.
+
+- Why we need a class whose object cannot be created , as we know an object represent a physical entity which has its existance but suppose we say in a Bank Project we have Person class and the features and methods of the Person is inherited by the Customer and the Employee and an object of the Person class will not represent any entity , so it a good choice to create it an abstract class in which we have the properties and the methods (which can be absrtact or not), 
+
+- But if any single method in the class is abstract it is important to make that particular class as Abstract.
+
+- Abstract method is similar to pure virtual functions in  java and  needs to be overidden by the child class.
+
+- But it is not compulsory to override the non abstract methods of abstract class in the child class.
+
+- InterFace:
+    - it is like a class but it has no implementation in it.
+    - it has the properties and methods which needs to be defined by the class which impelment it. 
+    - variables are by default: static,public and final
+    - methods are by default : instance public and abstract.
+
+
+SYNTAX OF ABSTRACT CLASS:
+
+abstract class A{
+
+    public int a;
+    abstract public void f1(); // like pure virtual function in cpp.
+}
+
+class B extends A{
+
+    public void f1(){  // should be overridden if we want to create the obect of B.
+
+
+    }
+}
+
+
+INTERFACE:
+    interface C{
+
+        int a=10; // by default final static and public
+        int calArea(int l,int b,int h); // by default public and abstract.
+    }
+
+    class D implements C{
+
+        // need to be public as in interface it is public by default.
+        public int calArea(int l,int b,int h){
+
+        }
+    }

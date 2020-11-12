@@ -1,0 +1,112 @@
+today we come to know about the overiding and overloading in Java and the final keyword in java.
+
+- when we define a method having the same prototype in the child class then it is known as the method overriding , but in cpp when we do method overiding ie the function name is same then the compiler do not go to the base class even if the parameter list do not match and due to that binding the error occurs as it is method hiding in cpp. 
+
+- But in Java , even if the method overiding is done the compiler always look in the base class and due to that if the paramter list is different in the child class , then the parent class method is called and this is method overloading and in between the base and the child class , method overloading is done in Java.
+
+
+- we can create the reference of the base class that will store the address of the child class object, and when we call the method which is overridden in child class , even then due to the early binding (based on the type of pointer variable) that corressponding function is called and to prevent this or enable late binding we need to use the virtual keyword in the function, which has been overided, in the base class.
+
+- But in Java, by default the late binding is done for the overridden methods. 
+ie Java by defaults does late binding for the overridden methods.
+
+- then we come to know about the final keyword in Java:
+        - final instance variable
+
+        - final static variable
+
+        - final local variable
+
+        - final class
+
+        - final method 
+
+
+- and method hiding in case of static methods.
+
+- final instance variable: can be initialized in three ways:
+                            1. AT THE TIME OF DECLARATION.
+                             example:
+                                    class A{
+                                        final int a=10;
+                                    }
+                            2. INSIDE THE CONSTRUCTOR:
+                            example:
+                                class A{
+
+                                    final int a;
+
+                                    A(){
+
+                                        a=10;
+                                    }
+                                }
+
+                            3. inside an initialization block 
+                                example:
+
+                                    class A{
+
+                                        final int a;
+
+
+                                         {
+
+                                             a=10;
+                                         }       
+
+                                        A{ ..... (  all the initialization blocks  are put inside constructor as the first line)}
+                                    }
+
+- final static variable: can be initialized in two ways:
+                        - at the time of declaration. 
+                            class A{
+                                final static int b=10;
+                            }
+
+                        - inside a static block: this block is executed when the class file is loaded.
+
+                            class A{
+
+                                 final static int b;
+
+                                 static{
+
+                                     b=10;
+                                 }   
+                                
+                            }
+
+
+- final local variable: can be initialized at once when they are declared.
+
+                    example: class A{
+
+
+                        void f1(){
+
+                            final int P1=3.14;
+
+
+                        }
+                    }
+
+
+- final class: cannot be inherited.
+     
+     example: final class A{
+
+
+     }
+
+
+
+- final method: cannot be overidden in the child class.
+
+    class A{
+
+        final void f1(){
+
+            
+        }
+    }

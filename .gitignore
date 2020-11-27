@@ -2,3 +2,5 @@
 *.cpp
 *.c
 .vscode\
+*.py
+*.html

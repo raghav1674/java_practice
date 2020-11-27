@@ -5,7 +5,7 @@ Absract classes means that class cannot be intiantiated, means we cannot create 
 
 - But if any single method in the class is abstract it is important to make that particular class as Abstract.
 
-- Abstract method is similar to pure virtual functions in  java and  needs to be overidden by the child class.
+- Abstract method is similar to pure virtual functions in java and  needs to be overidden by the child class.
 
 - But it is not compulsory to override the non abstract methods of abstract class in the child class.
 
@@ -47,3 +47,26 @@ INTERFACE:
 
         }
     }
+
+
+    - we can create the reference of interface which could refer to the classes which implements it.
+    - we cannot create object of the interface.
+    - abstract class have constructor but interfaces donot have.
+
+    - an interfae can extends one or more interfaces.
+
+    inteface A{
+
+
+    }
+
+    interface B extends A{
+
+
+    }
+
+
+
+    - a class can extend atmost one class but can implements as many as many interfaces.
+
+    

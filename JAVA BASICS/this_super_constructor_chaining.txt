@@ -26,11 +26,13 @@ suppose:
     B bref = new B();   
 
 We can think of `this` as the  `bref` and `super` as the `aref`.
-as with the help of super can refer the functions and the data members of the super class of that child class.
+and with the help of super can refer the functions and the data members of the super class of that child class.
 
 - we can refer to only overridded methods of base class and all props and the methods of teh base class using the `super`.
 
 - we then come to know about the Constructor Chaining:
+
+
     - if we donot create the Constructor in the base and the Child class the default constrcutor is creaeted by the compiler and the first line of the constrcutor is super(); ie whenever the Constructor of Child is called the Base class constructor is called first.
 
     in Cpp:

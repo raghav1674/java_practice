@@ -1,0 +1,22 @@
+- we come to know that the Object class is the root parent class of all the classes.
+- we can override some usefull methods of Object Class:
+
+            - protected void finalize(){} : 
+            
+            it is called before the object is destoryed .
+            
+            the garbage collection is done by the Garbage collector program in java and it is based on the reference counting ie the object which is not refered by any reference it considered to be Garbage Block and is destroyed by the garbage collector program.
+
+
+            - public boolean equals(Object): 
+            
+            it is basically used to equate the two objects based   on the values stored in them not on the basis of the reference stored.
+
+            suppose: Class s1 = new Class();   Class s2 = s1; // then s1==s2 will be equal as both of them will have the reference of same object.
+
+            - public String toString(){}: it is used to print the value of the reference which referes to some object.  
+            and when we simply print the reference which is refering to some object it prints.
+            ClassName@reference
+
+
+        

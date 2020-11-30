@@ -1,0 +1,19 @@
+String class is a final class in the java.lang package and we can create the Strng either using the String literal or using the String constructor
+- when we create the String using the literals and if the sequence of characters in that literal is same then tow objects will not be created
+and the reference will be same.
+
+- there are some methods defined in the String class:
+    - indexOf('char',[position]): returns the index starting from the position else -1.
+    - lastIndexOf('char',[position]): indices remains the same but searching from right to left.
+    - substring(start,stop): stop is exclusive.
+    - equals(): compares the value.
+    - equalsIgnoreCase(): case insensitive matching.
+    - compareTo(): returns the difference of first misMatch Ascii value.
+    - replace('char to be replace','to which the char to be replaced')
+    - endsWith(): returns true or false.
+    - startsWith():
+    - toCharArray(): returns char[]
+    - charAt(index): returns the character at that specified index. 
+
+    
+- String is immutable ie we cannot change the string once created.

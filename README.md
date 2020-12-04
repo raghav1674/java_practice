@@ -11,3 +11,7 @@
 - [Overriding ,OverLoading and Final](https://github.com/raghav1674/java_practice/blob/master/JAVA%20BASICS/overiding_overloading_final.txt)
 - [This ,Super ,Constructor Chaining](https://github.com/raghav1674/java_practice/blob/master/JAVA%20BASICS/this_super_constructor_chaining.txt)
 - [Abstract Class,Abstract Method,Interface](https://github.com/raghav1674/java_practice/blob/master/JAVA%20BASICS/Abstract_InterFaces.txt)
+- [String](https://github.com/raghav1674/java_practice/blob/master/JAVA%20BASICS/String.txt)
+- [Array]
+- [Exception]
+- [Thread](https://github.com/raghav1674/java_practice/blob/master/JAVA%20BASICS/Thread.txt)

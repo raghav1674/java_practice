@@ -1,0 +1,127 @@
+Thread is basically is a subprocess of the process. As the processes are scheduled by the os , the thread canbe scheduled
+programmatically to ensure the parallel or async execution of the code.
+
+- How can we do it programmatically ?
+
+ we need to create  the object of Thread class and pass the reference of the object in which class we want to do threading.
+ - but in the constructor of Thread(a1),  what could be the formal parameter it cannot be Object as Object cannot call the methods which we have defined in the class wich inherits it.
+   So there is reference of an Interface Runnable , so what it means that the object which is passed in Thread class constructor should implement Runnable.
+   and there is one method in interface which ned to be defined in that class ie  `public void run()` and put the code we want to be run by different threads of same process.
+
+   class A implements Runnable{
+
+       public void run(){ f1();}
+
+       public void f1(){ for(int i=0;i<10;i++) System.out.print(i);}
+
+       public static void main(String [] args){
+
+           A a = new A();
+           Thread t1 = new Thread(a); // a is now runnable object as it implements the Runnable interface. 
+           //now  we need to start the thread execution. 
+           t1.start();
+       }
+   }
+
+   
+   - Then we came to know about another way of implementing Threading.
+
+    for that we need to extend the Thread class:
+
+        class A extends Thread{
+
+            // and override the run method.
+
+            public void run(){
+
+                f1();
+            }
+
+         public void f1(){
+             // we can also print the current thread name .
+             // we have a static method in the Thread class `currentThread()` which returns the current thread object
+             // and we have one instance method which is `getName()` to get the current thread name.
+             // by default the name of threads would be `Thread-[number]`.
+
+             // we can also change the name by passing the name in the constructor of our class.
+
+             A(String s){
+                 super(s1);
+             }
+              for(int i=0;i<10;i++)
+
+              System.out.println(Thread.currentThread().getName());
+               System.out.print(i);
+               
+               }
+
+    public static void main(String[] args){
+
+        A a = new A("MyThread");
+        a.start();
+    }
+
+
+    }
+
+
+    - Then we come to know about the LifeCycle of the Thread.
+
+        - New Thread State:
+
+            it is the state when we create the Thread or Runnable object.
+
+        - Running State:
+
+            it is the state when the thread is in a scheduling process, and it begins when we call the  start method 
+            in this phase we can call the start state and the stop method.
+
+        - Non Running State:
+
+            when the sleep method which is a static method of Thread class is called the Thread is put in a state, 
+            that it is not in execution or when some I/O operation to be performed by the Thread.
+
+        `public static void sleep(Integer(time in ms)){}`
+
+        - Dead State:
+
+            - when the thread has finished its execution.
+            - when some exception has occurred in some thread that particular thread will get terminated but other keep on executing.
+            - when we call the stop method explicitly.
+
+
+        
+        Thread Priority:
+            - this is not reliable feature.
+
+            - we an assign the prioirty to the thread so that they execute in that fashion ,
+                higher the priority , higher will be the predence of execution of that particular subprocess.
+                
+                - we have two instance methdos in the Thread class:
+                    -- getPriority() : returns int value between 0 to 10. and default value is 5.
+                    -- setPriority(int num): we can set the priority.
+
+        
+        Issue in Multithreading:
+
+        - when two threads are accessing the same resources at the time , it can leads to loss of integrity in the data.
+         suppose we have two threads which is working on calculation of the balance of one account.
+
+         t1 --------------                           
+                        balance  
+         t2--------------
+
+         and suppose :
+
+         withdraw:
+
+
+         if(amt<balance){
+
+             balance-=amt;
+         }
+
+
+         when t1 starts it sees that the if condition is satisified and then suddenly the other thread gets executed.
+         - and for that the if condition holds true and both had deducted the amount from the balance and it is not correct.
+         - so we need to do thread sync incase of shared data.
